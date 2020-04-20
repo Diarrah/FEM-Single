@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); 
 
 $violet: hsl(257, 40%, 49%);
@@ -81,36 +81,41 @@ body {
 }
 
 .socials { 
-    list-style: none;
-    margin-left: auto;
     width: 200px;
+    margin-left: auto;
     & a {
-        display: inline-flex;
-        justify-content: center;
-        height: 40px; width: 40px;
-        border: 1px solid #fff;
-        color: #fff;
         border-radius: 50%;
-        text-decoration: none;
-        transition: .4s ease;
         &:hover { background-color: #fff; }
-        &:nth-of-type(1):hover { 
-            color: #3b5998; }
-        &:nth-of-type(2):hover {
-            color: #00acee; }
-        &:nth-of-type(3) i {
-            padding: 10px 10px 0 10px;
-            transform: translateY(1px);
-            &:hover {
-               background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-                -webkit-text-fill-color: transparent; 
-                -webkit-background-clip: text;
-                background-clip: text; }
+
+        &:nth-child(1) i { 
+            padding: 12px 0 0 15px; 
+            &:hover { color: #3b5998; }
         }
-        & i {
-            font-size: 1rem;
-            transform: translateY(11px);
+
+        &:nth-child(2) i { 
+            padding: 12.5px 0 0 12.5px; 
+            &:hover { color: #00acee }
+        }
+
+        &:nth-child(3) i { 
+            padding: 12px 0 0 13px; 
+            &:hover {
+                background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
         }
     }
-    @media (max-width: 797px) { margin:  0 auto; }
-}
+
+    & i {
+        color: white;
+        height: 45px; width: 45px;
+        font-size: 20px;
+        border: 1px solid white;
+        border-radius: 50%;    
+    }
+
+     @media (max-width: 797px) { margin: 0 auto; }  
+
+    }
